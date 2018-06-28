@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <img src="https://images2.alphacoders.com/678/678388.jpg" alt="">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      //função para carregamento antes dos elementos html
+      $(document).ready(function(){
+        alert('DOM Carregado!!!');
+      });
+      //função para carregamento depois dos elementos html
+      $(window).on('load', function () {
+        alert('Carregamento Completo!!!');
+      });
+    </script>
+  </body>
+</html>

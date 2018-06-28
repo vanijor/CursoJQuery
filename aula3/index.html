@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>Lógica de Desenvolvimento em JQuery</title>
+</head>
+<body>
+
+    <h1>PontoCanal Inscreva-se</h1>
+    <a href="#">Link 1</a>
+    <a href="#" class="link2">Link 2</a>
+    <a href="#" id="link3">Link 3</a>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        //função para carregamento antes dos elementos html
+        $(document).ready(function(){
+            /*
+            $('h1').css("color", "#f66");
+            $('h1').hide();
+            $('h1').delay(5000);
+            $('h1').fadeIn('slow');
+            $('h1').text('Curso JQuery PontoCanal');//muda o texto
+            
+           //$('h1').css("color", "#f66").hide().delay(5000).fadeIn('slow').text('Curso JQuery PontoCanal');
+           $('h1')
+                .css("color", "#f66")
+                .hide()
+                .delay(2000)
+                .fadeIn('slow')
+                .text('Curso JQuery PontoCanal')
+                .click(function(){
+                    $('body').css("background","#C30")
+                    $('h1').css("color","#fff");
+                });
+                */
+            $('a').css({
+                        "color":"red",
+                        "display":"block",
+                        'font-size':"20px"
+                        });
+            $('.link2').css({"color":"green"});
+            $('#link3').css({"color":"#000"});
+            $('*').css({"padding":"10px"});
+            $('h1, #link3').css({"border-bottom":"1px solid blue"});
+        });
+  </script>
+</body>
+</html>

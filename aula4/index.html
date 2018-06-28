@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <title>Lógica de Desenvolvimento em JQuery</title>
+</head>
+<body>
+
+    <div class="div1">
+        <h2>H2 filho de div1</h2>
+        <p>P filo de div1 <span>SPAN filho de P</span></p>
+        <span>SPAN filho direto de div1</span>
+    </div>
+    <h2>H2 fora de div1</h2>
+    <p class="p1">P1 fora de div1</p>
+    <p>P2 fora de div1</p>  
+    <p>P3 fora de div1</p>  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('h2').css({"margin":"0"});
+            $('p').css({"margin":"0", "color":"blue"});
+            $('.div1').css({"margin-bottom":"20px", "background":"#ccc"});
+
+            //filhas            
+            $('.div1 span').hide().delay(1000).fadeIn("slow").css({"color":"green","font-size":"15px"});
+            $('.div1 h2').hide().css({"color":"red","font-size":"50px"}).fadeIn(800);
+
+            //filhas diretas do elemento            
+            $('.div1 > span').css({"color":"red"});
+
+            //Primeiro elemento apos o selecionado
+            $('.p1 + p').css({"font-size":"25px"});
+
+            //Atacando todos elementos apos o selecionado
+            $('.p1 ~ p').css({"color":"#000"});
+        });  
+    </script>
+</body>
+</html>

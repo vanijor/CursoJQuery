@@ -2,4 +2,4 @@
 
 Curso de Jquery 
 
-https://www.youtube.com/user/PontoCanalOficial/featured
+https://pontocomdesenvolvimento.net/
